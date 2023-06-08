@@ -1,0 +1,233 @@
+.hamburgerMenuIcon1 {
+  position: absolute;
+  height: 66.67%;
+  width: 100%;
+  top: 16.67%;
+  right: 0;
+  bottom: 16.67%;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.hamburgerMenuIcon {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: var(--sec-button-blue);
+  position: relative;
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: none;
+}
+.hamburgerMenuIcon:hover {
+  background-color: var(--black-50);
+}
+.hamburgerMenuIcon:active {
+  background-color: var(--color-silver-200);
+}
+.dashboardIcon {
+  position: relative;
+  width: 16px;
+  height: 16px;
+}
+.button {
+  position: relative;
+  font-size: var(--bb1-size);
+  line-height: 150%;
+  font-weight: 600;
+  font-family: var(--bb3);
+  color: var(--black-700);
+  text-align: left;
+}
+.plusIcon {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: none;
+}
+.dashboardParent,
+.employerGhostM {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.dashboardParent {
+  justify-content: flex-start;
+  gap: var(--gap-5xs);
+}
+.employerGhostM {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-3xs) var(--padding-base);
+  background-color: var(--white);
+  border-radius: var(--br-7xs);
+  height: 36px;
+  box-sizing: border-box;
+  justify-content: center;
+}
+.employerGhostM:hover {
+  background-color: var(--black-50);
+}
+.employerGhostM:active {
+  background-color: var(--black-80);
+}
+.payrollAdminIcon {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.itemButtons,
+.menuItemContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-xl);
+}
+.accountIcon {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.hamburgerMenuWrapper {
+  width: 28px;
+  height: 28px;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-9xs);
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+}
+.iconText {
+  position: relative;
+  font-size: var(--bb3-size);
+  line-height: 150%;
+  font-family: var(--bb3);
+  color: var(--black-900);
+  text-align: left;
+  display: none;
+}
+.iconButton {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-9xs) var(--padding-7xs);
+  background-color: var(--white);
+  box-shadow: var(--base1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-9xs);
+}
+.iconButton:hover {
+  background-color: var(--black-50);
+}
+.iconButton:active {
+  background-color: var(--black-80);
+}
+.acmeInternationalLogistics {
+  position: relative;
+  line-height: 150%;
+  font-weight: 600;
+}
+.accountName,
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.accountName {
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+}
+.navbar {
+  align-self: stretch;
+  background-color: var(--white);
+  padding: var(--padding-base) var(--padding-101xl);
+  justify-content: space-between;
+  text-align: left;
+  font-size: var(--bb1-size);
+  color: var(--black-700);
+  font-family: var(--bb3);
+}
+@media screen and (max-width: 1200px) {
+  .hamburgerMenuIcon {
+    display: none;
+  }
+  .itemButtons,
+  .menuItemContainer {
+    display: flex;
+  }
+}
+@media screen and (max-width: 960px) {
+  .hamburgerMenuIcon {
+    display: flex;
+  }
+  .hamburgerMenuIcon:active {
+    background-color: var(--black-80);
+  }
+  .itemButtons {
+    display: none;
+  }
+  .menuItemContainer {
+    display: flex;
+  }
+  .navbar {
+    padding-left: var(--padding-61xl);
+    padding-right: var(--padding-61xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 420px) {
+  .hamburgerMenuIcon {
+    display: flex;
+  }
+  .acmeInternationalLogistics,
+  .itemButtons {
+    display: none;
+  }
+  .navbar {
+    padding-left: var(--padding-5xl);
+    padding-right: var(--padding-5xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 350px) {
+  .itemButtons {
+    display: none;
+  }
+  .menuItemContainer {
+    display: flex;
+  }
+  .acmeInternationalLogistics {
+    display: none;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .hamburgerMenuIcon {
+    display: flex;
+  }
+  .itemButtons {
+    display: none;
+  }
+  .menuItemContainer {
+    display: flex;
+  }
+}
+@media screen and (max-width: 661px) {
+  .acmeInternationalLogistics {
+    display: none;
+  }
+}

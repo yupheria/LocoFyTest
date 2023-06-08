@@ -1,0 +1,120 @@
+.typLogoPriMint {
+  position: relative;
+  width: 125.79px;
+  height: 38px;
+}
+.typSecLogoSymbolPriMint {
+  position: relative;
+  width: 36px;
+  height: 33.21px;
+  display: none;
+}
+.typLogoContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.kiaOraDave,
+.sa {
+  position: relative;
+  line-height: 150%;
+  font-weight: 600;
+}
+.sa {
+  font-size: var(--bb2-size);
+  font-family: var(--bb3);
+  color: var(--navy-900);
+  text-align: center;
+}
+.avatarMSize,
+.userActionButtonM {
+  align-items: center;
+  justify-content: center;
+}
+.avatarMSize {
+  align-self: stretch;
+  flex: 1;
+  border-radius: var(--br-13xl);
+  background-color: var(--mint-900);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.userActionButtonM {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-9xs);
+  background-color: var(--white);
+  border-radius: var(--br-9xs);
+  box-shadow: var(--base);
+  width: 40px;
+  height: 40px;
+  box-sizing: border-box;
+}
+.userActionButtonM:hover {
+  background-color: var(--color-whitesmoke-200);
+  cursor: pointer;
+}
+.userActionButtonM:active {
+  background-color: var(--color-silver-100);
+}
+.header,
+.userActionButtonM,
+.userProfileAction {
+  display: flex;
+  flex-direction: row;
+}
+.userProfileAction {
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--gap-xs);
+}
+.header {
+  align-self: stretch;
+  background-color: var(--navy-900);
+  padding: var(--padding-xl) var(--padding-101xl);
+  align-items: flex-start;
+  justify-content: space-between;
+  text-align: right;
+  font-size: var(--bb1-size);
+  color: var(--white);
+  font-family: var(--bb3);
+}
+@media screen and (max-width: 1200px) {
+  .typSecLogoSymbolPriMint {
+    display: none;
+  }
+}
+@media screen and (max-width: 960px) {
+  .typLogoPriMint {
+    display: none;
+  }
+  .typSecLogoSymbolPriMint {
+    display: flex;
+  }
+  .kiaOraDave {
+    display: none;
+  }
+  .header {
+    padding-left: var(--padding-61xl);
+    padding-right: var(--padding-61xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 420px) {
+  .typLogoPriMint {
+    display: none;
+  }
+  .typSecLogoSymbolPriMint {
+    display: flex;
+  }
+  .kiaOraDave {
+    display: none;
+  }
+  .header {
+    padding-left: var(--padding-5xl);
+    padding-right: var(--padding-5xl);
+    box-sizing: border-box;
+  }
+}
